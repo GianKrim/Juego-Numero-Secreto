@@ -1,5 +1,5 @@
 
-let numeroAleatorio = 10;
+let numeroAleatorio = 100;
 let numeroSecreto = 0;
 let intentos = 0;
 let listaNnumerosSorteados = [];
@@ -14,7 +14,7 @@ function verificarIntento() {
     let numeroUsuario = parseInt(document.getElementById("valorUsuario").value);
     
     if (numeroUsuario === numeroSecreto) {
-    asignarTextoElemento ("p", `Acertaste el Número en ${intentos} ${intentos === 1 ? "Vez" : "Veces"}`);
+    asignarTextoElemento ("p", `Acertaste el Número en ${intentos} ${intentos === 1 ? "Intento" : "Intentos"}`);
    document.getElementById("reiniciar").removeAttribute("disabled");
     } else {
         if (numeroUsuario > numeroSecreto) {
